@@ -6,3 +6,9 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/9f494f08/
+MinimalSubscriber	ros2_heartbeat_subscriber.py	/^class MinimalSubscriber(Node):$/;"	c
+__init__	ros2_heartbeat_subscriber.py	/^    def __init__(self):$/;"	m	class:MinimalSubscriber
+listener_callback	ros2_heartbeat_subscriber.py	/^    def listener_callback(self, msg):$/;"	m	class:MinimalSubscriber
+main	ros2_heartbeat_publisher.py	/^def main(args=None):$/;"	f
+main	ros2_heartbeat_subscriber.py	/^def main(args=None):$/;"	f
+timer_callback	ros2_heartbeat_publisher.py	/^    def timer_callback():$/;"	f	function:main	file:
