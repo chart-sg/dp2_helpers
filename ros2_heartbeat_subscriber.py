@@ -22,7 +22,6 @@ class MinimalSubscriber(Node):
         'CSSDDoor', 
         'LiftController',
         'MIR',
-        'Magni4',
         'Magni2',
         'HumanRmfCore',
         'Magni3'
@@ -34,7 +33,6 @@ class MinimalSubscriber(Node):
             'CSSDDoor': self.get_clock().now(),  
             'LiftController': self.get_clock().now(), 
             'MIR': self.get_clock().now(), 
-            'Magni4': self.get_clock().now(), 
             'Magni2': self.get_clock().now(), 
             'HumanRmfCore': self.get_clock().now(), 
             'Magni3': self.get_clock().now()
