@@ -1,0 +1,6 @@
+<launch>
+  <node name="free_fleet_client" pkg="free_fleet_client" type="free_fleet_client" output="screen" args="-f magni --dds-domain 24">
+    <param name="robot_name" command="bash -c &quot;hostname | tr -d '\n' &quot; " />
+    <param name="max_dist_to_first_waypoint" type="double" value="10.0" />
+  </node>
+</launch>
