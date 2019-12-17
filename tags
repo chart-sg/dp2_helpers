@@ -9,6 +9,7 @@
 MinimalSubscriber	ros2_heartbeat_subscriber.py	/^class MinimalSubscriber(Node):$/;"	c
 __init__	ros2_heartbeat_subscriber.py	/^    def __init__(self):$/;"	m	class:MinimalSubscriber
 listener_callback	ros2_heartbeat_subscriber.py	/^    def listener_callback(self, msg):$/;"	m	class:MinimalSubscriber
+main	request_loop.py	/^def main(argv = sys.argv):$/;"	f
 main	ros2_heartbeat_publisher.py	/^def main(args=None):$/;"	f
 main	ros2_heartbeat_subscriber.py	/^def main(args=None):$/;"	f
 timer_callback	ros2_heartbeat_publisher.py	/^    def timer_callback():$/;"	f	function:main	file:
