@@ -17,11 +17,22 @@ class DoorLiftAdapter(Node):
 
     def door_adapter_subscriber_callback(self, msg):
         print("translating lift_states to door_states")
+	# translates liftStates to the appropriate door_states
         pass
     
-    def lift_adapter_subscriber_callback(self, msg):
+    def lift_adapter_subscriber_callback(self, in_msg):
         print("translating door_requests to lift_requests")
-        pass
+	# Check if message is for door LF001
+	# if so:
+        out_msg = LiftRequest()
+        out_msg.request_time = self._node.get_clock().now().to_msg()
+        out_msg.session_id = "human_rmf"
+        out_msg.lift_name = "LF001"
+        out_msg.destination_floor = 'L3'
+        out_msg.request_type = out_msg.REQUEST_AGV_MODE
+        out_msg.door_state = out_msg.DOOR_CLOSED
+        print(out_msg)
+        self.lift_requests_pub.publish(out_msg)
 
 def main(args=None):
     rclpy.init(args=args)

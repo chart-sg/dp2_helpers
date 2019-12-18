@@ -11,7 +11,7 @@ MinimalSubscriber	ros2_heartbeat_subscriber.py	/^class MinimalSubscriber(Node):$
 __init__	door-lift-bridge.py	/^    def __init__(self):$/;"	m	class:DoorLiftAdapter
 __init__	ros2_heartbeat_subscriber.py	/^    def __init__(self):$/;"	m	class:MinimalSubscriber
 door_adapter_subscriber_callback	door-lift-bridge.py	/^    def door_adapter_subscriber_callback(self, msg):$/;"	m	class:DoorLiftAdapter
-lift_adapter_subscriber_callback	door-lift-bridge.py	/^    def lift_adapter_subscriber_callback(self, msg):$/;"	m	class:DoorLiftAdapter
+lift_adapter_subscriber_callback	door-lift-bridge.py	/^    def lift_adapter_subscriber_callback(self, in_msg):$/;"	m	class:DoorLiftAdapter
 listener_callback	ros2_heartbeat_subscriber.py	/^    def listener_callback(self, msg):$/;"	m	class:MinimalSubscriber
 main	door-lift-bridge.py	/^def main(args=None):$/;"	f
 main	request_loop.py	/^def main(argv = sys.argv):$/;"	f
