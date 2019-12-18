@@ -26,13 +26,14 @@ class DoorLiftAdapter(Node):
 	# if so:
         out_msg = LiftRequest()
         out_msg.request_time = self._node.get_clock().now().to_msg()
-        out_msg.session_id = "human_rmf"
+        out_msg.session_id = "lift_door_bridge"
         out_msg.lift_name = "LF001"
         out_msg.destination_floor = 'L3'
         out_msg.request_type = out_msg.REQUEST_AGV_MODE
         out_msg.door_state = out_msg.DOOR_CLOSED
         print(out_msg)
         self.lift_requests_pub.publish(out_msg)
+        # can extend to more scenarios, perhaps based on session id name
 
 def main(args=None):
     rclpy.init(args=args)
