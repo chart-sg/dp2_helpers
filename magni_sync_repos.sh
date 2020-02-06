@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#rsync -a ~/repos/ ubuntu@magni1.local:~/repos
-rsync -a ~/repos/ ubuntu@magni2.local:~/repos
-rsync -a ~/repos/ ubuntu@magni3.local:~/repos
-#rsync -a ~/repos/ ubuntu@magni4.local:~/repos
+#rsync -a ~/dp2_ws/ ubuntu@magni1.local:~/dp2_ws
+rsync -a ~/dp2_ws/ ubuntu@magni2.local:~/dp2_ws
+#rsync -a ~/dp2_ws/ ubuntu@magni3.local:~/dp2_ws
+#rsync -a ~/dp2_ws/ ubuntu@magni4.local:~/dp2_ws
