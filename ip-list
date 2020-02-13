@@ -5,3 +5,7 @@
 10.233.29.72, LiftController
 10.233.29.79, Magni1
 10.233.29.75, Magni2
+10.233.29.47, B.Braun Server
+10.233.29.46, B.Braun Device
+10.233.29.179, VSM Server (Might not be static)
+10.233.29.222, VSM Device (Might not be static)
